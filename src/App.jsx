@@ -1,20 +1,17 @@
 import React from "react";
 import Calendar from "./components/Calendar";
 
-
 export default function App() {
   return (
     <div
-      className="flex flex-col items-center justify-between"
+      className="h-screen flex flex-col items-center justify-between overflow-hidden"
       style={{
-        height: "100vh",              // 🧭 Full screen height
-        overflow: "hidden",            // 🧭 No scrolling
-        backgroundColor: "transparent" // 🧭 Let image show through
+        backgroundColor: "transparent", // Allows background image to show
       }}
     >
       {/* ===== Header ===== */}
-      <header>
-        <h1 className="text-2xl font-bold text-indigo-700 mt-4 mb-2">
+      <header className="mt-3">
+        <h1 className="text-2xl font-bold text-indigo-700">
           Interactive Calendar
         </h1>
       </header>
