@@ -18,7 +18,7 @@ html, body, #root {
 
 /* ✅ Background setup */
 body {
-  background-image: url("img2.jpg"); /* make sure file name and path are correct */
+  background-image: url("/img2.jpg"); /* make sure file name and path are correct */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
