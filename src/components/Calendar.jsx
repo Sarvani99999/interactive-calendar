@@ -84,15 +84,19 @@ export default function Calendar() {
   className="calendar-container flex flex-col"
   style={{
     width: "950px",
-    minHeight: "83vh", // ✅ slightly taller so the grid fits inside
-    padding: "20px 28px",
-    backgroundColor: "white", // ✅ ensures white covers full box
+    backgroundColor: "white",
     border: "2px solid black",
     borderRadius: "14px",
     boxShadow: "0 6px 18px rgba(0, 0, 0, 0.15)",
     boxSizing: "border-box",
+    padding: "20px 28px",
+    margin: "40px auto",
+    /* ✅ auto height to wrap grid properly */
+    height: "auto",
   }}
 >
+
+
 
 
   
@@ -135,7 +139,9 @@ export default function Calendar() {
       </div>
 
       {/* ===== Fixed Calendar Grid (Always 6 equal rows) ===== */}
-      <div className="grid grid-cols-7 gap-3 flex-grow" style={{ height: "480px" }}>
+      
+        <div className="grid grid-cols-7 gap-3" style={{ minHeight: "480px" }}>
+
         {matrix.map((week, wi) => (
           <React.Fragment key={wi}>
             {week.map((d, di) => {
