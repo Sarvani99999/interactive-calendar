@@ -4,9 +4,9 @@ import Calendar from "./components/Calendar";
 export default function App() {
   return (
     <div
-      className="h-screen flex flex-col items-center justify-between overflow-hidden"
+      className="min-h-screen flex flex-col items-center justify-start overflow-auto py-8"
       style={{
-        backgroundColor: "transparent", // Allows background image to show
+        backgroundColor: "transparent", // Keeps your gradient background visible
       }}
     >
       {/* ===== Header ===== */}
