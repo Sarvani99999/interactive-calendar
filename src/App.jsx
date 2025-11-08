@@ -20,11 +20,6 @@ export default function App() {
       <main className="flex-grow flex items-center justify-center w-full">
         <Calendar />
       </main>
-
-      {/* ===== Footer ===== */}
-      <footer className="text-sm text-gray-500 mb-3">
-        © 2025 Calendar Project
-      </footer>
     </div>
   );
 }

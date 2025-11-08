@@ -80,14 +80,22 @@ export default function Calendar() {
   const HIDE_TIMES_IN_UI = false;
 
   return (
-    <div
-  className="calendar-container card flex flex-col"
+  <div
+  className="calendar-container flex flex-col"
   style={{
     width: "950px",
-    height: "70vh",  // 🧭 Calendar adjusts dynamically to screen height
-    padding: "12px 18px",
+    minHeight: "83vh", // ✅ slightly taller so the grid fits inside
+    padding: "20px 28px",
+    backgroundColor: "white", // ✅ ensures white covers full box
+    border: "2px solid black",
+    borderRadius: "14px",
+    boxShadow: "0 6px 18px rgba(0, 0, 0, 0.15)",
+    boxSizing: "border-box",
   }}
 >
+
+
+  
 
       {/* ===== Header Section ===== */}
       <div className="flex items-center justify-between mb-5 header-grid">

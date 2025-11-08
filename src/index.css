@@ -17,20 +17,29 @@ html, body, #root {
 }
 
 /* ✅ Background setup */
+
+
 body {
-  background-image: url("/img2.jpg"); /* make sure file name and path are correct */
+  background: linear-gradient(to bottom right, #f9e3f1, #e3f0ff);
+  background-image: url("/img2.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
   height: 100vh;
-  overflow: hidden;
+  width: 100vw;
   margin: 0;
   padding: 0;
+
+  /* ✅ Center the calendar properly */
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+
+  /* ✅ Remove this line from your old code */
+  /* overflow: hidden; */
 }
+
 
 /* Remove overlay completely */
 body::before {
@@ -42,14 +51,20 @@ body::before {
 
 
 .calendar-container {
-  max-width: 950px;
-  margin: 10px auto 6px;
-  padding: 10px 14px;
-  min-height: 650px; /* keeps page balanced */
-  width: 100vw;
-  height: 100vh;
+  background-color: #ffffff;
+  border: 2px solid #222;             /* ✅ Darker, cleaner border */
+  border-radius: 12px;                /* ✅ Smooth corners */
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);  /* ✅ Softer shadow */
+  width: 950px;
+  margin: 20px auto 40px auto;        /* ✅ Brings it closer to header */
+  padding: 28px;
   box-sizing: border-box;
 }
+
+
+
+
+
 
 
 
@@ -158,3 +173,5 @@ body::before {
   }
  
 }
+
+
